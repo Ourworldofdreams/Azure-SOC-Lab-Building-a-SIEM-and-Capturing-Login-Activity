@@ -1,40 +1,140 @@
-# Azure SOC Lab Building a SIEM and Capturing Login Activity
+# Azure SOC Lab: Building a SIEM for Real-Time Threat Detection
 
-![Screenshot 2024-11-20 at 5 27 00 PM](https://github.com/user-attachments/assets/18d6315c-20f5-4bdb-8c30-8b16204a2137)
+## Project Overview
+This project demonstrates the implementation of a Security Operations Center (SOC) in Azure, featuring a SIEM solution to monitor and analyze potential security threats. The lab simulates real-world scenarios by intentionally exposing RDP services to capture and analyze unauthorized access attempts.
 
-![Screenshot 2024-11-20 at 5 45 20 PM](https://github.com/user-attachments/assets/1ef8c634-8e58-43ae-826c-19f6c2c5a3d6)
+<img width="755" alt="Screenshot 2024-11-22 at 12 36 57 AM" src="https://github.com/user-attachments/assets/4f0445ef-a6f7-46f8-8385-d82e9ad106ff">
 
-![Screenshot 2024-11-20 at 6 07 57 PM](https://github.com/user-attachments/assets/d7fa5b00-0495-418c-94ab-c94bd7a48322)
+---
 
-![Screenshot 2024-11-20 at 8 02 13 PM](https://github.com/user-attachments/assets/d3c7d573-66cf-4c08-836a-3de8e2840c79)
+## 🎯 Project Objectives
+- Deploy and configure a Windows 10 Pro VM in Azure
+- Implement a SIEM solution for log aggregation and analysis
+- Monitor and analyze RDP login attempts
+- Create and refine threat detection rules
+- Develop incident response procedures
 
-![Screenshot 2024-11-20 at 8 06 19 PM](https://github.com/user-attachments/assets/435f936f-f18c-4611-9116-c8060bf1ba71)
+---
 
-![Screenshot 2024-11-20 at 8 11 48 PM](https://github.com/user-attachments/assets/3bde8703-d618-4c91-9d5b-a920c9957c7f)
+## 🛠️ Technologies Used
+- Microsoft Azure
+- Windows 10 Pro VM
+- Remote Desktop Protocol (RDP)
+- SIEM Solution
+- PowerShell for automation
+- Azure Log Analytics
+- Azure Security Center
 
-![Screenshot 2024-11-20 at 8 15 45 PM](https://github.com/user-attachments/assets/baaf89d8-508e-46b9-acaf-472eaae6eb2a)
+---
 
+## 📋 Project Architecture
 
-![Screenshot 2024-11-20 at 8 17 45 PM](https://github.com/user-attachments/assets/8919b964-caee-402c-ba58-16258686e9c1)
+### 1. Virtual Machine Configuration
+- Deployed Windows 10 Pro VM in Azure
+- Configured Network Security Groups (NSGs)
+- Enabled RDP access for simulation purposes
+- Implemented basic authentication for testing
+---
+![image](https://github.com/user-attachments/assets/e5a59085-82e1-45a5-9ad9-2d145863ba5f)
+![image](https://github.com/user-attachments/assets/96b28321-ebf5-4014-8080-d4df652f9df1)
 
-![Screenshot 2024-11-20 at 8 19 48 PM](https://github.com/user-attachments/assets/85121c4c-8d50-4a6f-b941-e79c0d6482fe)
+---
 
-![Screenshot 2024-11-20 at 8 22 47 PM](https://github.com/user-attachments/assets/002b43c7-8b9d-4544-a4c2-df48409d8488)
+### 2. SIEM Implementation
+- Deployed SIEM solution in Azure environment
+- Configured log collection and aggregation
+- Set up real-time monitoring dashboards
+- Established alert rules for suspicious activities
+---
+![image](https://github.com/user-attachments/assets/62ee057b-ec7c-4acc-acd2-0d389dadaadf)
+![image](https://github.com/user-attachments/assets/0905db20-c49e-4ecf-b8df-b6632ed221c4)
+![image](https://github.com/user-attachments/assets/3a959065-b053-4846-abc0-a5606433d22f)
+![image](https://github.com/user-attachments/assets/ffdf291a-a855-4b9b-9b8a-54ed59d35748)
 
-![Screenshot 2024-11-20 at 8 34 13 PM](https://github.com/user-attachments/assets/121fdfca-7f37-4f96-8653-071ccd29bf9e)
+---
+### 3. Security Monitoring Setup
+- Created custom log queries
+- Implemented alert thresholds
+- Configured email notifications
+- Developed incident response playbooks
+---
+![image](https://github.com/user-attachments/assets/6bc1cecd-4651-439f-9d38-5e3848ea4ed0)
+![image](https://github.com/user-attachments/assets/e2ac8072-215b-436d-8690-6b7059991e8f)
+<img width="897" alt="Screenshot 2024-11-22 at 1 03 08 AM" src="https://github.com/user-attachments/assets/83c334d2-710e-4326-aeb5-4de6bb3c4b33">
+![image](https://github.com/user-attachments/assets/77514e20-6dec-4c41-812b-7de51e5e3c53)
+![image](https://github.com/user-attachments/assets/55849087-67cb-4692-9a20-34c4bc4ca847)
+<img width="1095" alt="image" src="https://github.com/user-attachments/assets/aabb5f1a-f375-43db-941a-3dc9bb050b47">
+<img width="1635" alt="image" src="https://github.com/user-attachments/assets/2a93c8ac-827f-4e68-ba02-6d5a39351810">
 
-![Screenshot 2024-11-20 at 8 40 09 PM](https://github.com/user-attachments/assets/4fe47ce0-f3e4-44a4-89d4-88efebf049b7)
+---
 
-![Screenshot 2024-11-20 at 8 42 27 PM](https://github.com/user-attachments/assets/83137033-d335-47d1-aba4-5dc6f243ccd9)
+## 🔍 Threat Detection Features
+1. **Login Activity Monitoring**
+   - Track failed login attempts
+   - Monitor successful authentications
+   - Identify brute force attack patterns
+   - Geographic location analysis of login attempts
 
-![Screenshot 2024-11-20 at 8 47 05 PM](https://github.com/user-attachments/assets/ec1132af-e243-4e8f-895e-52d8bc4aca88)
+2. **Alert Configuration**
+   - Multiple failed login attempts
+   - Off-hours access attempts
+   - Unusual IP address ranges
+   - Concurrent session detection
 
-![Screenshot 2024-11-20 at 9 00 23 PM](https://github.com/user-attachments/assets/516d9756-1a26-459f-9b0a-beb94c9b23d3)
+3. **Threat Intelligence Integration**
+   - Known malicious IP tracking
+   - Automated threat feed updates
+   - Custom IOC implementation
+   - Real-time threat correlation
 
-![Screenshot 2024-11-20 at 9 02 13 PM](https://github.com/user-attachments/assets/2c46d44d-275a-44cc-9eb0-1e8fca45d596)
+---
 
-<img width="1095" alt="Screenshot 2024-11-21 at 4 27 25 PM" src="https://github.com/user-attachments/assets/d2abf828-20d2-4124-ae90-de9fc9dc46e8">
+## 🔐 Security Considerations
+- RDP exposure risks and mitigations
+- Password policy implementation
+- Network segmentation strategies
+- Defense-in-depth approach
 
-<img width="1635" alt="Screenshot 2024-11-21 at 4 31 40 PM" src="https://github.com/user-attachments/assets/3b647bf2-2b7b-4b91-9096-5d2f93ae9c58">
+---
 
+## 📈 Future Enhancements
+1. Implementation of Machine Learning for anomaly detection
+2. Integration with additional threat intelligence feeds
+3. Automated incident response workflows
+4. Enhanced visualization and reporting capabilities
 
+---
+
+## 🎓 Learning Outcomes
+- Practical experience in SOC operations
+- SIEM deployment and configuration
+- Real-time threat monitoring
+- Incident response procedures
+- Log analysis and threat detection
+---
+
+## **Key Insights:**
+
+### **Real-time Threat Detection:** 
+- The lab showed the power of SIEM systems in monitoring real-time login activity, which is critical for detecting threats early.
+### **Understanding Exposed RDP Vulnerabilities:** 
+- Exposing RDP services can provide valuable log data for security monitoring, but it also highlights the risk of brute-force attacks on weak passwords.
+### **Threat Intelligence Feeds:** 
+- Integrating threat intelligence with SIEM enhances the ability to monitor and respond to security threats effectively.
+
+---
+
+## **Conclusion:**
+
+This lab provided hands-on experience in building a SOC and deploying a SIEM system in Azure. I gained valuable insights into cloud-based security monitoring, log analysis, and threat detection techniques. This setup will serve as a foundation for more advanced security operations in the future.
+
+---
+
+## 📝 Documentation and Resources
+- [Azure Security Documentation](https://docs.microsoft.com/azure/security/)
+- [SIEM Best Practices](https://docs.microsoft.com/security/operations)
+- [Azure VM Security](https://docs.microsoft.com/azure/virtual-machines/security-overview)
+
+---
+
+  
