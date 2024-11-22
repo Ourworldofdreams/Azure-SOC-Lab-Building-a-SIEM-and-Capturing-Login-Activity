@@ -1,4 +1,4 @@
-# Azure SOC Lab: Building a SIEM for Real-Time Threat Detection
+# Azure SOC Lab RDP Honey Pot: Building a SIEM for Real-Time Threat Detection
 
 ## Project Overview
 This project demonstrates the implementation of a Security Operations Center (SOC) in Azure, featuring a SIEM solution to monitor and analyze potential security threats. The lab simulates real-world scenarios by intentionally exposing RDP services to capture and analyze unauthorized access attempts.
